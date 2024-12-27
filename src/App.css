@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.homeimgContainer{
+  /* border: 2px solid red; */
+  height: 20rem;
+  width: 20rem;
+}
+.homeimg{
+  height: 100%;
+  width: 100%;
+}
+.about div{
+  width: 50%;
+  /* border: 2px solid red; */
+}
+.about img{
+  width: 50%;
+  height: 100%;
+  background-size: contain;
+}
+.footer{
+  /* border: 2px solid red; */
+}
+.footer div{
+  width: 25%;
+}
