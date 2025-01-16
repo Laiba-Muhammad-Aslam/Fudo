@@ -4,7 +4,7 @@ import about from "../assets/about.png"
 export default function About() {
   return (
      <div className='flex justify-center gap-20 items-center py-15 about'>
-         <div className='homeimgContainer flex justify-center items-center'>
+         <div className='aboutimgContainer flex justify-center items-center'>
                 <img src={about} alt="" className='about'/>
             </div>
             <div className='p-6 py-8'>

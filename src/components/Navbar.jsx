@@ -3,20 +3,28 @@ import logo from "../assets/logo.png"
 import { IoSearch } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import { MdLogin } from "react-icons/md";
+import { Outlet, Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className='flex justify-between items-center py-2 px-7'>
+    <div className='flex justify-between items-center py-2 px-7 navbar'>
         <div><img src={logo} alt="logo"/></div>
         <div>
             <ul className='flex justify-center items-center gap-8 font-medium'>
-                <li className='text-red-900'>Why Fudo?</li>
-                <li>Abous Us</li>
-                <li>Services</li>
+                <li className='text-red-900'>
+                  <Link to="/">Why Fudo?</Link>
+                </li>
+                <li>
+                  <Link to="/aboutUs">Abous Us</Link>
+                </li>
+                <li>
+                  <Link to="/services">Services</Link>
+                </li>
                 {/* <li>Menu</li> */}
                 {/* <li>Contact</li> */}
             </ul>
         </div>
+        <Outlet />
         <div className='flex justify-center items-center gap-5'>
             <button className='text-xl'><IoSearch /></button>
             <button className='text-xl'><FaShoppingCart /></button>

@@ -11,7 +11,7 @@ export default function Home() {
             <p className='font-medium text-1xl py-4'>Our job is to filling your tummy with delicious food <br/> and  with fast and free delivery</p>
             <button className=' bg-red-900 text-white px-3 py-2 rounded-lg font-medium'>Get Started</button>
         </div>
-        <div className='homeimgContainer'>
+        <div className='homeimgContainer bg-red-900 flex justify-center items-center'>
             <img src={home} alt="" className='homeimg'/>
         </div>
     </div>
